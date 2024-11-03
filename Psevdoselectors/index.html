@@ -28,13 +28,11 @@
             font-size: 24px; /* Увеличиваем размер шрифта до 24px при наведении */
         }
         /* Исправлено: правильно используем селектор для disabled */
-        button:disabled {
+        .some-button:disabled {
             border: 2px dashed grey; /* Изменён селектор с :disabled.no-hover на button:disabled */
-            background-color: lightgrey; /* Добавлено, чтобы кнопка была визуально отличима */
-            cursor: not-allowed; /* Добавлено, чтобы указатель был "недоступен" */
         }
 
-        button:enabled {
+        .some-button:hover {
             color: white; /* Добавлена точка с запятой */
             background-color: gray; /* Добавлена точка с запятой */
         }
