@@ -10,30 +10,29 @@
       crossorigin="anonymous"
     />
     <style>
-    .paragraphs p:first-of-type::first-letter {
+      .paragraphs p:first-of-type::first-letter {
         font-size: 36px;
         margin-left: 16px;
         color: orange;
-        }
-        .paragraphs p:first-of-type::first-line {
+      }
+      .paragraphs p:first-of-type::first-line {
         font-size: 24px;
-        }
-        .paragraphs p:first-of-type::selection {
+      }
+      .paragraphs p:first-of-type::selection {
         background-color: red;
         color: white;
-        }
-        a::before {
+      }
+      a::before {
         content: ">";
         color: green;
         margin-right: 0; /* Убедитесь, что нет пробелов */
-        }
-        a::after {
+      }
+      a::after {
         content: "<";
         color: green;
-        margin-right: 0; /* Убедитесь, что нет пробелов */
-        }
-        
-        </style>
+        margin-left: 4px; /* Добавляем отступ после ссылки */
+      }
+    </style>
   </head>
 
   <body>
@@ -46,8 +45,9 @@
     <p>
       Самым посещаемым сайтом на сегодняшний день является
       <a href="https://www.google.com">google.com</a>. После него вторым идет
-      <a href="https://www.youtube.com">youtube.com</a>
+      <a href="https://www.youtube.com">youtube.com</a>.
     </p>
   </body>
 </html>
+
 
