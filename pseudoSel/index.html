@@ -10,28 +10,34 @@
       crossorigin="anonymous"
     />
     <style>
-      .paragraphs p:first-of-type::first-letter {
-        font-size: 36px;
-        margin-left: 16px;
-        color: orange;
-      }
-      .paragraphs p:first-of-type::first-line {
-        font-size: 24px;
-      }
-      .paragraphs p:first-of-type::selection {
-        background-color: red;
-        color: white;
-      }
-      a::before {
-        content: ">";
-        color: green;
-        margin-right: 0; /* Убедитесь, что нет пробелов */
-      }
-      a::after {
-        content: "<";
-        color: green;
-        margin-left: 4px; /* Добавляем отступ после ссылки */
-      }
+
+.paragraphs p:first-of-type::first-letter {
+    font-size: 36px;         /* Размер первой буквы */
+    color: orange;           /* Цвет первой буквы */
+    padding-left: 16px; 
+}
+
+.paragraphs p:first-of-type::first-line {
+    font-size: 24px;         /* Размер первой строки */
+}
+
+.paragraphs p:first-of-type::selection {
+    background-color: red;   /* Красный фон для выделенного текста */
+    color: white;            /* Белый цвет текста при выделении */
+}
+
+a::before {
+    content: ">";
+    color: green;
+    margin-right: 0; /* Убедитесь, что нет пробелов */
+}
+
+a::after {
+    content: "<";
+    color: green;
+    margin-left: 0px; /* Добавляем отступ после ссылки */
+}
+
     </style>
   </head>
 
