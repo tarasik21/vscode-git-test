@@ -6,9 +6,7 @@
     <title>Фигуры</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <style>
-        body {
-            margin: 0; 
-        }
+
 
         .rectangle {
             background-color: forestgreen; 
@@ -35,13 +33,14 @@
         }
 
         .triangle {
-            width: 0;
-            height: 0px;
-            border-left: 50px solid transparent; 
-            border-right: 50px solid transparent; 
-            border-top: 50px solid brown; 
-            margin: 50px 0 0 50px; 
-        }
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent; /* Полуправый треугольник */
+    border-right: 50px solid transparent; /* Полулевый треугольник */
+    border-top: 50px solid brown; /* Цвет и высота перевернутого треугольника */
+    margin: 50px; /* Внешний отступ 50px */
+}
+
     </style>
 </head>
 <body>
