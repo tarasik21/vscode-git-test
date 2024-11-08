@@ -11,42 +11,42 @@
     />
     <link rel="stylesheet" href="./styles.css" />
     <style>
-        .separator{
-            height: 50 px;
+        .separator {
+            height: 50px; /* Исправлено: убран пробел */
             background-color: aliceblue;
         }
-        .child, .parent{
-            border: 2 px solid black;
+        .child, .parent {
+            border: 2px solid black; /* Исправлено: убран пробел */
             padding: 16px;
         }
-        .parent{
+        .parent {
             width: 100%;
-            height: 100 px;
+            height: 100px; /* Исправлено: убран пробел */
             background-color: yellowgreen;
         }
-        .child{
+        .child {
             background-color: yellow;
             position: absolute;
             right: 20px;
         }
         .static-parent {
-    position: static;
-}
-.relative-parent {
-    position: relative;
-    top: 20px; /* Сдвиг вниз на 10 пикселей */
-    left: 50px; /* Сдвиг вправо на 20 пикселей */
-}
-.absolute-parent {
-    position: absolute;
-    bottom: 20px; /* Сдвиг вниз на 10 пикселей */
-    right: 50px; /* Сдвиг вправо на 20 пикселей */
-}
-.fixed-parent {
-    position: fixed;
-    bottom: 20px; /* Сдвиг вниз на 10 пикселей */
-    left: 30px; /* Сдвиг вправо на 20 пикселей */
-}
+            position: static;
+        }
+        .relative-parent {
+            position: relative;
+            top: 20px;
+            left: 50px;
+        }
+        .absolute-parent {
+            position: absolute;
+            bottom: 20px;
+            right: 50px; /* Используем только right или left */
+        }
+        .fixed-parent {
+            position: fixed;
+            bottom: 20px;
+            left: 30px; /* Используем только left или right */
+        }
     </style>
   </head>
 
@@ -57,7 +57,7 @@
         По умолчанию все элементы имеют <code>position: static</code>. Это значение явно указывать
         не обязательно. Такие элементы находятся в потоке и занимают определенное пространство в
         документе. Свойства <code>top: ...; left: ...; righ: ...; bottom: ...;</code> никак не
-        влияют на такой элемент
+        влияют на такой элемент.
       </p>
       <div class="parent static-parent">
         <code class="tip">p1 - position: static;</code>
@@ -79,17 +79,17 @@
         Элементы с <code>position: absolute</code> выпадают из потока и располагаются в заданной
         позиции относительно ближайшего родителя с
         <code>position: relative | absolute | fixed</code>. Если такого родителя нету, то элемент
-        позиционируется относительно <code>body</code>
+        позиционируется относительно <code>body</code>.
       </p>
       <div class="parent absolute-parent">
-        <code class="tip">p3 - position: absolute; right: 20px; left: 50px;</code>
+        <code class="tip">p3 - position: absolute; bottom: 20px; right: 50px;</code>
         <div class="child"><code class="tip">c3 - position: absolute;</code></div>
       </div>
       <h2><code>position: fixed;</code></h2>
       <p>
         Элементы с <code>position: fixed;</code> выпадают из потока и фиксируют свое положение
         относительно экрана (окна браузера). Управлять их положением можно с помощью свойств
-        <code>top: ...; left: ...; righ: ...; bottom: ...;</code>
+        <code>top: ...; left: ...; righ: ...; bottom: ...;</code>.
       </p>
       <div class="parent fixed-parent">
         <code class="tip">p4 - position: fixed; bottom: 20px; left: 30px;</code>
