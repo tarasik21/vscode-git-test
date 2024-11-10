@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5 Blocks</title>
+  <style>
+    /* Контейнер для всех блоков */
+    .container {
+      display: flex;               /* Flexbox для размещения блоков в строку */
+      justify-content: space-between; /* Равномерное распределение блоков */
+    }
+
+    /* Базовые стили для блоков */
+    .container div {
+      height: 200px;               /* Высота блока 200px */
+      width: 20%;                  /* Каждый блок занимает 20% ширины */
+    }
+
+    /* Цвета для каждого блока */
+    .block_red {
+      background-color: red;
+    }
+
+    .block_green {
+      background-color: green;
+    }
+
+    .block_blue {
+      background-color: lightblue;
+    }
+
+    .block_yellow {
+      background-color: yellow;
+    }
+
+    .block_black {
+      background-color: black;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="block_red"></div>
+    <div class="block_green"></div>
+    <div class="block_blue"></div>
+    <div class="block_yellow"></div>
+    <div class="block_black"></div>
+  </div>
+</body>
+</html>
