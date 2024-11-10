@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    display: flex; /* Делаем тело страницы гибким контейнером */
+    flex-direction: column; /* Размещаем элементы вертикально */
+    height: 100vh; /* Занимаем всю высоту экрана */
+}
+
+.header {
+    background-color: yellow;
+    flex: 1; /* Занимаем одну часть доступного пространства */
+}
+
+.content {
+    background-color: pink;
+    flex: 5; /* Занимаем пять частей доступного пространства */
+    display: flex; /* Делаем содержимое гибким контейнером */
+}
+
+.sidebar {
+    background-color: gray;
+    flex: 2; /* Занимаем две части доступного пространства */
+}
+
+.footer {
+    background-color: green;
+    flex: 1; /* Занимаем одну часть доступного пространства */
+}
