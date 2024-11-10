@@ -1,37 +1,48 @@
+/* Устанавливаем box-sizing для корректного расчета ширины */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;             /* Flexbox для горизонтального размещения секций */
+  justify-content: space-between;
+  margin: 0;
+}
+
+/* Стили для секций */
 section {
-    background: aquamarine;
-    padding: 16px;
-  }
-  
-  .square {
-    width: 100px;
-    height: 100px;
-  }
-  
-  footer {
-    height: 30px;
-    border: 2px solid black;
-  }
-  body {
-    display: flex;
-    justify-content: space-between;
-  }
-  .container {
-    width: 50%;
-    box-sizing: border-box;
-  }
-  .red {
-    background-color: red;
-    float: left;
-  }
-  
-  .green {
-    background-color: green;
-    float: right;
+  width: 50%;                /* Каждая секция занимает 50% ширины */
+  background: aquamarine;
+  padding: 16px;
+}
+
+/* Классы для квадратов */
+.square {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+.red {
+  background-color: red;
+  float: left;               /* Красный квадрат слева */
+}
+
+.green {
+  background-color: green;
+  float: right;              /* Зеленый квадрат справа */
+}
+
+/* Стили для футера */
 .footer {
-        clear: both;
-        padding-top: 20px;
-        text-align: center;
-        font-size: 14px;
-        color: gray;
-      }
+  clear: both;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: gray;
+  height: 30px;
+  border: 2px solid black;
+}
