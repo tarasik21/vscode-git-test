@@ -1,27 +1,24 @@
-body {
-    margin: 0;
-    display: flex; /* Делаем тело страницы гибким контейнером */
-    flex-direction: column; /* Размещаем элементы вертикально */
-    height: 100vh; /* Занимаем всю высоту экрана */
-}
-
 .header {
     background-color: yellow;
-    flex: 1; /* Занимаем одну часть доступного пространства */
-}
-
-.content {
+    height: 50px;
+  }
+  
+  .content {
     background-color: pink;
-    flex: 5; /* Занимаем пять частей доступного пространства */
-    display: flex; /* Делаем содержимое гибким контейнером */
-}
-
-.sidebar {
+    height: 500px;
+    float: left;
+    width: 80%;
+  }
+  
+  .sidebar {
     background-color: gray;
-    flex: 2; /* Занимаем две части доступного пространства */
-}
-
-.footer {
+    height: 500px;
+    float: left;
+    width: 20%;
+  }
+  
+  .footer {
     background-color: green;
-    flex: 1; /* Занимаем одну часть доступного пространства */
-}
+    height: 50px;
+    clear: both;
+  }
