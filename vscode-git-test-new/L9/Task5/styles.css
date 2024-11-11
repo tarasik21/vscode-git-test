@@ -10,7 +10,7 @@
   z-index: 1000;
 }
 
-
+/* Стили для навигации */
 .navigation {
   height: 100%;
   width: 100%;
@@ -21,20 +21,19 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  height: 100%;
+  line-height: 40px;
   align-items: center;
 }
 
 .nav-item {
   color: white;
   margin-left: 16px;
-  font-size: 16px;
 }
 
 /* Основное содержание */
 .content {
   background-color: beige;
-  padding-top: 60px; 
+  padding-top: 60px; /* Отступ, чтобы хедер не перекрывал контент */
   height: 5000px;
 }
 
@@ -44,7 +43,7 @@
   height: 200px;
   background-color: aquamarine;
   position: relative;
-  margin: 80px auto 0; 
+  margin: 80px auto 0; /* Центрирование головы по горизонтали и 80px отступ сверху */
 }
 
 .ear {
@@ -55,13 +54,13 @@
 }
 
 .ear_left {
-  top: -60px; 
-  left: -40px; 
+  top: -60px; /* Поднимаем ухо выше уровня головы */
+  left: -40px; /* Смещаем ухо к левому верхнему углу головы */
 }
 
 .ear_right {
-  top: -60px; 
-  right: -40px; 
+  top: -60px; /* Поднимаем ухо выше уровня головы */
+  right: -40px; /* Смещаем ухо к правому верхнему углу головы */
 }
 
 .eye {
