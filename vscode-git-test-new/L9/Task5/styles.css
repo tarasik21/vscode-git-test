@@ -1,73 +1,101 @@
-.header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 40px;
-  background-color: darkturquoise;
-}
+    /* Хедер с фиксированным позиционированием */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 40px;
+      background-color: darkturquoise;
+      z-index: 1000; /* Чтобы хедер был поверх контента */
+    }
 
-.navigation {
-  display: flex;
-  align-items: center;
-  height: 100%; /* Высота навигации равна высоте хедера */
-}
+    /* Навигация в хедере */
+    .navigation {
+      height: 100%; /* Высота навигации равна высоте хедера */
+    }
 
-.nav-list {
-  display: flex;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
+    .nav-list {
+      display: flex;
+      justify-content: flex-start; /* Размещение по горизонтали */
+      align-items: center; /* Центрирование по вертикали */
+      height: 100%;
+      list-style-type: none;
+      padding-left: 16px;
+    }
 
-.nav-item {
-  margin-left: 16px;
-  color: white;
-}
+    .nav-item {
+      color: white;
+      line-height: 40px; /* Вертикальное выравнивание */
+      margin-right: 16px; /* Отступ между элементами */
+    }
 
-.content {
-  background-color: beige;
-  height: 5000px;
-}
-/* Стили для головы */
-.head {
-  width: 200px;
-  height: 200px;
-  background-color: aquamarine;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.ear {
-  width: 40px;
-  height: 60px;
-  background-color: brown;
-  position: absolute;
-}
+    /* Основной контент */
+    .content {
+      background-color: beige;
+      height: 5000px; /* Увеличиваем высоту для прокрутки */
+      padding-top: 40px; /* Отступ, чтобы не перекрывать хедер */
+    }
 
-.ear_left {
-  top: -60px;
-  left: -40px;
-}
+    /* Голова медведя */
+    .head {
+      width: 200px;
+      height: 200px;
+      background-color: aquamarine;
+      position: absolute;
+      top: calc(50% - 100px); /* Центрируем голову по вертикали */
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 999; /* Голова выше контента */
+      transition: top 0.3s ease; /* Плавное движение головы при прокрутке */
+    }
 
-.ear_right {
-  top: -60px;
-  right: -40px;
-}
-.eye {
-  width: 30px;
-  height: 30px;
-  background-color: grey;
-  border-radius: 50%; /* Делает глаза круглыми */
-  position: absolute;
-}
+    /* Уши медведя */
+    .ear {
+      width: 40px;
+      height: 60px;
+      background-color: brown;
+      position: absolute;
+    }
 
-.eye_left {
-  top: 80px; /* Отступ сверху 80px */
-  left: 40px; /* Отступ слева 40px */
-}
+    .ear_left {
+      top: -60px;
+      left: -40px;
+    }
 
-.eye_right {
-  top: 80px; /* Отступ сверху 80px */
-  right: 40px; /* Отступ справа 40px */
-}
+    .ear_right {
+      top: -60px;
+      right: -40px;
+    }
+
+    /* Глаза медведя */
+    .eye {
+      width: 30px;
+      height: 30px;
+      background-color: grey;
+      border-radius: 50%; /* Делаем глаза круглыми */
+      position: absolute;
+    }
+
+    .eye_left {
+      top: 80px;
+      left: 40px;
+    }
+
+    .eye_right {
+      top: 80px;
+      right: 40px;
+    }
+
+    /* При прокрутке */
+    window.addEventListener('scroll', function () {
+      const head = document.querySelector('.head');
+      const headerHeight = document.querySelector('.header').offsetHeight;
+      const scrollPosition = window.scrollY;
+
+      // Голова скрывается под хедером при прокрутке
+      if (scrollPosition > headerHeight) {
+        head.style.top = `${headerHeight + (scrollPosition - headerHeight) / 2}px`;
+      } else {
+        head.style.top = `calc(50% - 100px)`;
+      }
+    });
