@@ -3,6 +3,8 @@ div.block {
   margin: 8px;
   height: 100px;
   width: 100px;
+  flex-grow: 1; 
+  min-width: 100px;
 }
 .container {
   display: flex;
