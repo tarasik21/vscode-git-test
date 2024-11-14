@@ -1,9 +1,16 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+
 .header {
     height: 40px;
     background-color: yellow;
     display: flex;
     align-items: center;
-    padding-left: 10px; 
+    padding-left: 16px;
 }
 
 
@@ -11,41 +18,22 @@
     margin: 0;
     display: flex;
     list-style-type: none;
+    padding: 0;
 }
 
 .navigation_item {
-    margin-right: 10px;
-}
-
-
-.footer {
-    height: 40px;
-    background-color: green;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-}
-
-.footer__text {
-    margin: auto;
-}
-
-
-.page {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    margin-right: 16px;
 }
 
 
 .content {
-    flex-grow: 1;
     display: flex;
+    flex-grow: 1; 
 }
 
 
 .dashboard {
-    flex-grow: 1;
+    flex: 1; 
     background-color: pink;
     display: flex;
     justify-content: center;
@@ -53,8 +41,35 @@
 }
 
 
+
+
 .news {
     width: 200px;
     background-color: grey;
-    padding: 10px; 
+    padding: 16px;
+}
+
+
+.news ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    line-height: 40px; 
+}
+
+.news ul li {
+    margin-bottom: 16px;
+}
+
+
+.footer {
+    height: 40px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__text {
+    margin: auto; 
 }
