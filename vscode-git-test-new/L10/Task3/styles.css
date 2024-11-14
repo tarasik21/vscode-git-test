@@ -58,3 +58,6 @@
     background-color: grey;
     padding: 10px; 
 }
+.news ul li {
+    line-height: 40px;
+}
