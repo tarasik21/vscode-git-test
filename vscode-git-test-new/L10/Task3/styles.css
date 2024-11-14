@@ -4,6 +4,10 @@
     min-height: 100vh; 
 }
 
+* {
+    box-sizing: border-box;
+}
+
 
 .header {
     height: 40px;
@@ -44,6 +48,7 @@
 
 
 .news {
+
     width: 200px;
     background-color: grey;
     padding: 16px;
