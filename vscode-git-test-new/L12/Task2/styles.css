@@ -10,11 +10,12 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-size: 74px;
   }
   
   div {
     height: 200px;
-    background-color: gray;
+    background-color: coral;
     color: white;
     text-align: center;
     text-transform: uppercase;
