@@ -1,20 +1,24 @@
-.container {
+div > div {
     width: 100px;
     height: 100px;
-    background-color: coral;
-    
+    background: coral;
+  }
+
+.container div:nth-child(1) {
+    display: none; 
   }
   
-  .container div:nth-child(1) {
-    display: none;
-  }
-  
+
   .container div:nth-child(2) {
     visibility: hidden;
+
+    
+}
+
+
+.container div:nth-child(3) {
+    visibility: visible; 
+
+
   }
   
-  .container div:nth-child(3) {
-    width: 100px;
-    height: 100px;
-    background-color: coral;
-  }
