@@ -2,14 +2,12 @@
   body {
     font-family: Verdana, sans-serif;
   }
-  .diff-block {
-    text-align: center; /* Выравниваем текст по центру */
-    margin: 0 auto; /* Центрируем блок на странице */
-  }
+
   
   header h1 {
     width: 50%;
-    margin: 0 auto;
+    margin: 16px auto;
+
     text-align: center;
     font-size: 74px;
     white-space: nowrap;
