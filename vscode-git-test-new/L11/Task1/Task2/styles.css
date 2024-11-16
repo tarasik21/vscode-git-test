@@ -1,20 +1,39 @@
 
-body{
-    display: flex;
+
+* {
+  box-sizing: border-box;
 }
-div{
-    width: 150px;
-    height: 100px;
-    background-color: bisque;
-    margin: 16px;
+
+.articles {
+  display: flex;
 }
-.cropped{
-    overflow: hidden;
+
+.articles div {
+  height: 100px;
+  width: 150px;
+  background-color: beige;
+  margin: 16px;
 }
-.both-scrolls{
-    overflow: scroll;
+
+
+.visible-text {
+  overflow: visible;
 }
-.vertical-scroll{
-    overflow: auto;
-    cursor: all-scroll;
+
+
+.cropped {
+  overflow: hidden;
+}
+
+
+.both-scrolls {
+  overflow: auto;
+  cursor: all-scroll;
+}
+
+
+.vertical-scroll {
+  overflow-y: auto;
+  overflow-x: hidden;
+  cursor: all-scroll;
 }
