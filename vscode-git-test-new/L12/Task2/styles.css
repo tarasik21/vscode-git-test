@@ -14,7 +14,7 @@ header {
 h1 {
   font-size: 74px;
   max-width: 50%;
-  margin: 0 auto;
+  margin: auto;
   white-space: nowrap;
 
   text-overflow: ellipsis;
