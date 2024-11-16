@@ -1,0 +1,33 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin: 32px;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+}
+
+p {
+    line-height: 28px;
+}
+
+p strong {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+}
+
+em {
+    font-style: italic;
+    color: grey;
+}
