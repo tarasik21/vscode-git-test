@@ -2,6 +2,10 @@
   body {
     font-family: Verdana, sans-serif;
   }
+  .diff-block {
+    text-align: center; /* Выравниваем текст по центру */
+    margin: 0 auto; /* Центрируем блок на странице */
+  }
   
   header h1 {
     width: 50%;
