@@ -14,5 +14,7 @@
   }
   
   .container div:nth-child(3) {
-    
+    width: 100px;
+    height: 100px;
+    background-color: coral;
   }
