@@ -1,26 +1,39 @@
-html{
-  font-family: Roboto, sans-serif;
-  font-size: 16px;
+
+body {
+  margin: 32px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
 }
-section{
-  margin: 32px;;
-}
+
+
 h1 {
-  word-spacing: 20px;
-  letter-spacing: 5px;
-  text-transform: lowercase;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  font-weight: 900;
 }
+
+
 p {
   line-height: 28px;
 }
-.technology {
+
+p strong {
   font-weight: 900;
+  font-size: 24px;
   letter-spacing: 3px;
+  opacity: 0.8;
   text-decoration: underline;
 }
-.translation {
-  color: grey;
-}
+
+
 a {
   text-decoration: none;
+}
+
+
+em {
+  font-style: italic;
+  color: grey;
 }
