@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .gallery {
+    display: flex;
+    overflow-x: auto;
+    cursor: all-scroll;
+  }
+  
+  body {
+    overflow: hidden;
+  }
+  
+  .thumb {
+    margin: 8px;
+    height: 100px;
+  }
