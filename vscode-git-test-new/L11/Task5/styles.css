@@ -1,18 +1,16 @@
 .gallery {
-    display: flex;
-    overflow-x: auto;
-    cursor: all-scroll;
-  }
-  
-  body {
-    overflow: hidden;
-  }
-  
-  .thumb {
-    margin: 8px;
-    flex-grow: 1;
-    width: 100%;
-    max-width: 320px;
-    height: 213px;
-    object-fit: cover;
-  }
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  cursor: all-scroll;
+  height: 100vh;
+}
+
+.thumb {
+  margin: 8px;
+  flex-shrink: 0;
+}
+
+body {
+  overflow: hidden;
+}
