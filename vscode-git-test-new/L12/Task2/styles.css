@@ -1,16 +1,20 @@
 * {
-  font-family: Verdana;
+  font-family: Verdana, sans-serif;
   box-sizing: border-box;
 }
 
-h1 {
-  font-size: 74px;
-  max-width: 50%;
-  margin: 0 auto; 
-  white-space: nowrap;
+body {
+  margin: 0;
+}
 
-  text-overflow: ellipsis;
+h1 {
+  margin: 0;
+  text-align: center;
+  width: 50%;
+  margin: 32px auto;
+  font-size: 74px;
   overflow: hidden;
+  text-overflow: ellipsis;
   white-space: nowrap;
 }
 
@@ -21,4 +25,5 @@ div {
   text-transform: uppercase;
   text-align: center;
   line-height: 200px;
+  font-size: 24px;  /* Добавляем размер шрифта */
 }
