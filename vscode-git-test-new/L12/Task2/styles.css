@@ -1,23 +1,22 @@
+* {
+  font-family: Verdana, sans-serif;
+}
 
-body {
-    font-family: 'Verdana', sans-serif;
-  }
-  h1 {
-    font-size: 74px; 
-    width: 50%; 
-    margin: 0 auto; 
-    white-space: nowrap; 
-    overflow: hidden; 
-    text-overflow: ellipsis; 
-  }
-  
+h1 {
+  font-size: 74px;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
 
-  div {
-    height: 200px; 
-    background-color: coral; 
-    color: white; 
-    text-transform: uppercase; 
-    text-align: center; 
-    line-height: 200px; 
-  }
-  
+div {
+  height: 200px;
+  background-color: coral;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 200px;
+}
