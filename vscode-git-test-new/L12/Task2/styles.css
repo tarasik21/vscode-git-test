@@ -1,0 +1,22 @@
+
+  body {
+    font-family: Verdana, sans-serif;
+  }
+  
+  header h1 {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  div {
+    height: 200px;
+    background-color: gray;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 200px;
+  }
