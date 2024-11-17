@@ -5,12 +5,14 @@
 
 }
 .first{
-    text-decoration:green underline;
-    text-decoration-style: wavy;
+
+    text-decoration:red overline;
 }
 .second{
     text-decoration:line-through;
 }
 .third{
-    text-decoration:red overline;
+    text-decoration:green underline;
+
+
 }
