@@ -10,39 +10,41 @@
       crossorigin="anonymous"
     />
     <style>
-      .image-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
+.image-container > div {
+  position: relative;
+  box-sizing: border-box;
+  width: 200px;
+  height: 200px;
+  margin: 16px;
+  border: 1px dotted #999;
+  overflow: hidden;
+}
 
-      .image-container > div {
-        box-sizing: border-box;
-        width: 200px;
-        height: 200px;
-        margin: 16px;
-        border: 1px dotted #999;
-        overflow: hidden;
-      }
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: filter 0.5s ease;
+}
 
-      .image-container img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-      }
+.image-container > div:hover img {
+  filter: opacity(50%) blur(4px) invert(100%);
+}
 
-      .caption {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 30px;
-        font-size: 14px;
-        font-weight: bold;
-      }
-
-      .image-container > div {
-        filter: opacity(50%) blur(4px) invert(100%);
-      }
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
     </style>
   </head>
   <body>
