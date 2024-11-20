@@ -4,15 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Gallery</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <style>
-
 * {
-
-  padding: 0;
-
-
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -25,9 +21,8 @@ body {
     background-color: #f5f5f5;
 }
 
-
 .image-container {
-    margin: 50px 0;
+    margin: 30px 0;
     text-align: center;
 }
 
@@ -37,10 +32,10 @@ body {
     border-radius: 20px;
 }
 
-
 .gallery {
     display: flex;
-    gap: 16px; 
+    gap: 8px;
+    margin-top: 20px;
 }
 
 .card {
@@ -48,12 +43,11 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    box-shadow: 0px 7px 18px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
     overflow: hidden;
     background-color: #fff;
 }
-
 
 .card:nth-child(1) img {
     filter: opacity(50%);
@@ -68,8 +62,8 @@ body {
 }
 
 .card img {
-    width: 150px; 
-    height: auto; 
+    width: 200px;
+    height: auto;
 }
 
 figcaption {
@@ -79,18 +73,21 @@ figcaption {
     font-size: 14px;
     background-color: #fff;
     width: 100%;
+    padding: 5px 0;
+    color: #555;
+    font-weight: 500;
 }
 
+figure {
+    margin: 0;
+}
 </style>
 <body>
-
     <div class="image-container">
         <img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson15/task1/big.jpeg" alt="A big scenic image">
     </div>
 
-
     <div class="gallery">
-
         <div class="card">
             <figure>
                 <img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson15/task1/small.jpg" alt="Filtered image with opacity">
