@@ -6,49 +6,52 @@
     <title>Document</title>
     <style>
 
-.form-control {
-            margin: 16px;
-        }
-
-    </style>
+form {
+    margin: 16px;
+}
+</style>
 </head>
 <body>
-    <form>
-        <div class="form-control">
-            <input type="text" name="lastName" value="Emerson">
+<form>
+    <div>
+        <input type="text" name="lastName" value="Emerson">
+    </div>
+    
+    <div>
+        <input type="number" name="age" value="17">
+    </div>
+    
+    <div>
+        <label>
+            <input type="checkbox" name="agree"> Accept terms and conditions
+        </label>
+    </div>
+    
+    <div>
+        <div class="choose-gender">
+            <label>
+                <input type="radio" name="gender" value="Male" checked> Male
+            </label>
         </div>
-
-        <div class="form-control">
-            <input type="number" name="age" value="17">
+        <div class="choose-gender">
+            <label>
+                <input type="radio" name="gender" value="Female"> Female
+            </label>
         </div>
-
-        <div class="form-control">
-            <input type="checkbox" id="agree" name="agree">
-            <label for="agree">Accept terms and conditions</label>
+        <div class="choose-gender">
+            <label>
+                <input type="radio" name="gender" value="Secret"> Secret
+            </label>
         </div>
-
-        <div class="form-control">
-            <div>
-                <input type="radio" id="male" name="gender" value="Male" checked>
-                <label for="male">Male</label>
-            </div>
-            <div>
-                <input type="radio" id="female" name="gender" value="Female">
-                <label for="female">Female</label>
-            </div>
-            <div>
-                <input type="radio" id="secret" name="gender" value="Secret">
-                <label for="secret">Secret</label>
-            </div>
-        </div>
-
-        <div class="form-control">
-            <textarea name="description" placeholder="Write description..."></textarea>
-        </div>
-
-        <div class="form-control">
-            <button type="submit">Submit</button>
-        </div>
-    </form>
+    </div>
+    
+    <div>
+        <textarea name="description" placeholder="Write description..."></textarea>
+    </div>
+    
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+</form>
 </body>
 </html>
