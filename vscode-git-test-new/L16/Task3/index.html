@@ -5,38 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Custom Checkbox</title>
     <style>
-
         .checkbox {
             position: relative;
             margin: 16px;
-            padding-left: 35px;
             font-size: 24px;
+            padding-left: 35px;
+            display: inline-block;
         }
 
-
+ 
         .checkbox input[type="checkbox"] {
             position: absolute;
             opacity: 0;
-            cursor: pointer;
-            height: 0;
             width: 0;
+            height: 0;
         }
 
-
+     
         .checkbox::before {
             content: '';
             position: absolute;
             left: 0;
-            top: 0;
+            top: 50%;
+            transform: translateY(-50%);
             width: 25px;
             height: 25px;
             background-color: #d3d3d3;
-            cursor: pointer;
-        }
-
-
-        .checkbox:hover::before {
-            background-color: #006400;
         }
 
 
@@ -47,8 +41,8 @@
 </head>
 <body>
     <label class="checkbox checked">
-        Checkbox
         <input type="checkbox" checked>
+        Checkbox
     </label>
 </body>
 </html>
