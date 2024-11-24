@@ -12,10 +12,6 @@
             box-sizing: border-box;
         }
 
-        .form-control {
-            margin-bottom: 10px;
-        }
-
         form {
             margin: 16px;
         }
@@ -24,21 +20,30 @@
         input[type="number"],
         textarea {
             width: 200px;
-            padding: 2px;
+            padding: 1px 2px;
+            border: 1px solid #7B7B7B;
         }
 
         textarea {
-            height: 100px;
-            resize: vertical;
+            height: 60px;
+            resize: none;
         }
 
-        .gender-options label {
-            display: block;
-            margin: 5px 0;
+        .form-control {
+            margin-bottom: 8px;
         }
 
         button {
-            padding: 2px 10px;
+            padding: 1px 6px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 3px;
+        }
+
+        label {
+            font-family: Arial, sans-serif;
         }
     </style>
 </head>
@@ -53,25 +58,23 @@
         </div>
 
         <div class="form-control">
-            <label>
-                <input type="checkbox" name="agree">
-                Accept terms and conditions
-            </label>
+            <input type="checkbox" id="agree" name="agree">
+            <label for="agree">Accept terms and conditions</label>
         </div>
 
-        <div class="form-control gender-options">
-            <label>
-                <input type="radio" name="gender" value="Male" checked>
-                Male
-            </label>
-            <label>
-                <input type="radio" name="gender" value="Female">
-                Female
-            </label>
-            <label>
-                <input type="radio" name="gender" value="Secret">
-                Secret
-            </label>
+        <div class="form-control">
+            <div>
+                <input type="radio" id="male" name="gender" value="Male" checked>
+                <label for="male">Male</label>
+            </div>
+            <div>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+            </div>
+            <div>
+                <input type="radio" id="secret" name="gender" value="Secret">
+                <label for="secret">Secret</label>
+            </div>
         </div>
 
         <div class="form-control">
