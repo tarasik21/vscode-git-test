@@ -3,39 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Custom Checkbox</title>
+    <style>
+
+        .checkbox {
+            position: relative;
+            margin: 16px;
+            padding-left: 35px;
+            font-size: 24px;
+        }
+
+
+        .checkbox input[type="checkbox"] {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+
+
+        .checkbox::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 25px;
+            height: 25px;
+            background-color: #d3d3d3;
+            cursor: pointer;
+        }
+
+
+        .checkbox:hover::before {
+            background-color: #006400;
+        }
+
+
+        .checkbox.checked::before {
+            background-color: #006400;
+        }
+    </style>
 </head>
-<style>
-    input[type="checkbox"]{
-        visibility: hidden;
-        width: 0;
-        height: 0;
-    }
-    .checkmark{
-        width: 25px;
-        height: 25px;
-        background-color: #d3d3d3;
-        display: inline-block;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-    .checkbox{
-        padding-left: 30px;
-        position: relative;
-        font-size: 24px;
-
-
-    }
-    .checkbox input:checked + .checkmark{
-        background-color: #0f0;
-    }
-
-</style>
 <body>
-    <label class="checkbox">
-        <label class="checkmark" for="custom-checkbox"></label>
-        <input id="custom-checkbox" type="checkbox" name="agree">
+    <label class="checkbox checked">
+        Checkbox
+        <input type="checkbox" checked>
     </label>
 </body>
 </html>
