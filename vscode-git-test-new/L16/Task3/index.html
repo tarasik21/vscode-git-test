@@ -14,7 +14,8 @@
         position: relative;
         font-size: 24px;
         padding-left: 35px;
-
+        margin: 16px;
+        display: inline-flex;
 
       }
 
@@ -24,7 +25,7 @@
         height: 0;
       }
 
-      .checkbox .checkmark {
+      .checkmark {
         position: absolute;
         left: 0;
         top: 0;
@@ -33,6 +34,11 @@
         background-color: #d3d3d3;
         display: inline-block;
       }
+      .checkbox{
+        padding-left: 30px;
+        position: relative;
+        font-size: 24px;
+      }
 
       .checkbox input[type="checkbox"]:checked + .checkmark {
         background-color: #006400;
@@ -40,10 +46,10 @@
     </style>
   </head>
   <body>
-    <label class="checkbox">
+    <label class="checkbox"
+      >Checkbox
       <input type="checkbox" />
       <span class="checkmark"></span>
-      Checkbox
     </label>
   </body>
 </html>
