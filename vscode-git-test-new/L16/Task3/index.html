@@ -10,37 +10,31 @@
       crossorigin="anonymous"
     />
     <style>
-      *{
-        box-sizing: border-box;
-      }
-      .checkbox {
-        position: relative;
-        font-size: 24px;
-        padding-left: 35px;
-        margin: 16px;
-        display: inline-flex;
-        align-items: center;
-      }
+.checkbox {
+  position: relative;
+  padding-left: 35px;
+  font-size: 24px;
+  margin: 16px;
+}
 
-      .checkbox input[type="checkbox"] {
-        visibility: hidden;
-        width: 0;
-        height: 0;
-      }
+.checkbox input {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
 
-      .checkmark {
-        position: absolute;
-        display: inline-block;
-        left: 0;
-        top: 0;
-        width: 25px;
-        height: 25px;
-        background-color: #d3d3d3;
-      }
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background-color: #d3d3d3;
+}
 
-      .checkbox input[type="checkbox"]:checked + .checkmark {
-        background-color: #006400;
-      }
+.checkbox input:checked + .checkmark {
+  background-color: #006400;
+}
     </style>
   </head>
   <body>
