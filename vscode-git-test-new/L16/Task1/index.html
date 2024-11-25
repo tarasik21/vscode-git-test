@@ -34,32 +34,14 @@ form > div {
         </label>
     </div>
     
-    <div>
-
-            <label class="choose-gender">
-                <input type="radio"
-                 name="gender"
-                  value="Male"
-                   checked> Male
-            </label class="choose-gender">
-
-
-            <label class="choose-gender">
-                <input type="radio"
-                 name="gender"
-                  value="Female"
-                  > Female
-            </label >
-
-
-            <label class="choose-gender">
-                <input type="radio"
-                 name="gender"
-                  value="Secret"
-                  > Secret
-            </label>
-
-    </div>
+    <div class="form-control choose-gender">
+        <input id="male" type="radio" name="gender" value="male" checked />
+        <label for="male">Male</label>
+        <input id="female" type="radio" name="gender" value="female" />
+        <label for="male">Female</label>
+        <input id="other" type="radio" name="gender" value="other" />
+        <label for="other">Secret</label>
+      </div>
     
     <div>
         <textarea name="description" placeholder="Write description..."></textarea>
